@@ -14,8 +14,9 @@
 U can just simply downoad and install and run this application
 
 # UI
-![Screenshot (299)](https://github.com/user-attachments/assets/381a83d5-bf97-4c7f-a1d7-2b19b40c27f4)
-![Screenshot (298)](https://github.com/user-attachments/assets/67c84850-28ea-405f-8a09-d2c8b81cacbf)
+
+![Screen![Screenshot (299)](https://github.com/user-attachments/assets/f5b8e161-8f8c-40ca-839b-0099327e12e3)
+shot (298)](https://github.com/user-attachments/assets/67c84850-28ea-405f-8a09-d2c8b81cacbf)
 ![Screenshot (297)](https://github.com/user-attachments/assets/dc001141-e401-441b-a0bb-f032117a20ba)
 ![Screenshot (296)](https://github.com/user-attachments/assets/5cb862a0-106f-476f-b613-951e6022ce15)
 
