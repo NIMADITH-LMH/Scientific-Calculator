@@ -19,4 +19,4 @@ U can just simply downoad and install and run this application
 ![Screenshot (297)](https://github.com/user-attachments/assets/dc001141-e401-441b-a0bb-f032117a20ba)
 ![Screenshot (296)](https://github.com/user-attachments/assets/5cb862a0-106f-476f-b613-951e6022ce15)
 
-this just a fun project also my first desktop application that i build i wanted know how to build a desktop and learn it
+this just a fun project also my first desktop application that i build i wanted learn how to build a desktop application
