@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #8e9efc 0%, #9c6feb 100%);
+            font-family: 'Poppins', sans-serif;
+            overflow: hidden;
+            animation: gradientAnimation 20s ease infinite;
+            background-size: 300% 300%;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .splash-container {
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .logo-container {
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            padding: 35px;
+            border-radius: 24px;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+            margin-bottom: 28px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .logo-container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                to bottom right,
+                rgba(255, 255, 255, 0.1),
+                rgba(255, 255, 255, 0.05),
+                rgba(255, 255, 255, 0.025)
+            );
+            transform: rotate(30deg);
+            pointer-events: none;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto;
+            animation: pulse 2s infinite;
+            filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.1));
+        }
+
+        .app-name {
+            color: white;
+            font-size: 28px;
+            font-weight: 600;
+            margin-top: 20px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            letter-spacing: 0.5px;
+        }
+
+        .developer-name {
+            color: white;
+            font-size: 16px;
+            opacity: 0.8;
+            margin-top: 8px;
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            font-style: italic;
+        }
+
+        .loading {
+            width: 100%;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 6px;
+            overflow: hidden;
+            margin-top: 35px;
+            position: relative;
+        }
+
+        .loading-bar {
+            position: absolute;
+            height: 100%;
+            width: 0%;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 6px;
+            animation: loading 3s ease-in-out forwards;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes loading {
+            0% { width: 0; }
+            20% { width: 20%; }
+            50% { width: 60%; }
+            80% { width: 85%; }
+            100% { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="splash-container">
+        <div class="logo-container">
+            <svg class="logo" width="120" height="120" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="12" fill="url(#paint0_linear)" />
+                <path d="M12 12H28V16H12V12Z" fill="white" />
+                <path d="M12 18H16V28H12V18Z" fill="white" />
+                <path d="M18 18H22V28H18V18Z" fill="white" />
+                <path d="M24 18H28V28H24V18Z" fill="white" />
+                <defs>
+                    <linearGradient id="paint0_linear" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#8e9efc" />
+                        <stop offset="1" stop-color="#9c6feb" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        <div class="app-name">Scientific Calculator</div>
+        <div class="developer-name">by Havindu Nimadith</div>
+        <div class="loading">
+            <div class="loading-bar"></div>
+        </div>
+    </div>
+</body>
+</html> 
