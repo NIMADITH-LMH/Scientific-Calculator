@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASIO fx-100MS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Digital+7&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="calculator-header">
+            <div class="brand">CASIO</div>
+            <div class="model">fx-100MS</div>
+            <div class="sub-text">S-V.P.A.M.</div>
+            <div class="edition">2nd edition</div>
+        </div>
+        <div class="display">
+            <div class="indicators">
+                <span class="deg">DEG</span>
+                <span class="stat">STAT</span>
+            </div>
+            <div class="previous-operand"></div>
+            <div class="current-operand main-display">0.</div>
+        </div>
+        <div class="buttons">
+            <!-- Top Row -->
+            <button class="function shift" onclick="calculator.toggleShift()">SHIFT</button>
+            <button class="function alpha" onclick="calculator.toggleAlpha()">ALPHA</button>
+            <button class="function" onclick="calculator.solve()">SOLVE</button>
+            <button class="function" onclick="calculator.derivative()">d/dx</button>
+            <button class="special mode" onclick="calculator.toggleMode()">MODE</button>
+            <button class="special clear" onclick="calculator.clear()">CLR</button>
+            <button class="special on" onclick="calculator.togglePower()">ON</button>
+
+            <!-- Second Row -->
+            <button class="function" onclick="calculator.calc()">CALC</button>
+            <button class="function" onclick="calculator.integrate()">∫dx</button>
+            <button class="function" onclick="calculator.square()">x²</button>
+            <button class="function" onclick="calculator.cube()">x³</button>
+            <button class="function" onclick="calculator.power()">x^y</button>
+            <button class="function" onclick="calculator.log()">log</button>
+            <button class="function" onclick="calculator.ln()">ln</button>
+
+            <!-- Third Row -->
+            <button class="function" onclick="calculator.toggleNegative()">(-)</button>
+            <button class="function" onclick="calculator.degree()">°'"</button>
+            <button class="function" onclick="calculator.hyp()">hyp</button>
+            <button class="function" onclick="calculator.sin()">sin</button>
+            <button class="function" onclick="calculator.cos()">cos</button>
+            <button class="function" onclick="calculator.tan()">tan</button>
+
+            <!-- Fourth Row -->
+            <button class="function" onclick="calculator.rcl()">RCL</button>
+            <button class="function" onclick="calculator.eng()">ENG</button>
+            <button class="parenthesis" onclick="calculator.leftParen()">(</button>
+            <button class="parenthesis" onclick="calculator.rightParen()">)</button>
+            <button class="function" onclick="calculator.stoD()">S⇔D</button>
+            <button class="memory" onclick="calculator.memoryPlus()">M+</button>
+
+            <!-- Number Pad -->
+            <button class="number" onclick="calculator.appendNumber('7')">7</button>
+            <button class="number" onclick="calculator.appendNumber('8')">8</button>
+            <button class="number" onclick="calculator.appendNumber('9')">9</button>
+            <button class="special del" onclick="calculator.delete()">DEL</button>
+            <button class="special ac" onclick="calculator.allClear()">AC</button>
+
+            <button class="number" onclick="calculator.appendNumber('4')">4</button>
+            <button class="number" onclick="calculator.appendNumber('5')">5</button>
+            <button class="number" onclick="calculator.appendNumber('6')">6</button>
+            <button class="operator" onclick="calculator.multiply()">×</button>
+            <button class="operator" onclick="calculator.divide()">÷</button>
+
+            <button class="number" onclick="calculator.appendNumber('1')">1</button>
+            <button class="number" onclick="calculator.appendNumber('2')">2</button>
+            <button class="number" onclick="calculator.appendNumber('3')">3</button>
+            <button class="operator" onclick="calculator.add()">+</button>
+            <button class="operator" onclick="calculator.subtract()">-</button>
+
+            <button class="number" onclick="calculator.appendNumber('0')">0</button>
+            <button class="number" onclick="calculator.appendDecimal()">.</button>
+            <button class="function" onclick="calculator.exp()">×10^x</button>
+            <button class="function" onclick="calculator.ans()">Ans</button>
+            <button class="equals" onclick="calculator.compute()">=</button>
+        </div>
+        
+        <!-- Formula History Panel -->
+        <div class="history-panel">
+            <div class="history-header">
+                <h3>Saved Formulas</h3>
+                <button id="close-history" title="Close History">×</button>
+            </div>
+            <div class="history-list">
+                <!-- History items will be added here -->
+            </div>
+            <div class="history-footer">
+                <button id="clear-history">Clear All</button>
+            </div>
+        </div>
+    </div>
+    <div class="app-footer">
+        <p>© Havindu Nimadith</p>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html> 

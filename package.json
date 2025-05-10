@@ -1,0 +1,32 @@
+{
+  "name": "first-dektop-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electronmon .",
+    "package": "electron-packager . MyApp --platform=win32 --arch=x64 --out=dist --overwrite",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.havindu.calculator",
+    "productName": "Scientific Calculator",
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    }
+  },
+  "keywords": [],
+  "author": "Havindu Nimadith",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "Scientific Calculator Desktop Application",
+  "devDependencies": {
+    "electron": "^35.1.2",
+    "electron-builder": "^26.0.12",
+    "electron-packager": "^17.1.2"
+  },
+  "dependencies": {
+    "first-dektop-app": "file:"
+  }
+}
