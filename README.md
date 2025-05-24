@@ -13,7 +13,6 @@ Perfect for students, engineers, mathematicians, and professionals who need reli
 
 ![Calculator Screenshot](logo.svg)
 
-*Note: Add an actual screenshot of your application for better presentation*
 
 ## ✨ Features
 
