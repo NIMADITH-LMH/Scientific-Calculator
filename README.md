@@ -274,4 +274,4 @@ This project is licensed under the ISC License - see the LICENSE file for detail
 ![Screenshot (296)](https://github.com/user-attachments/assets/9c189f23-d014-42b0-b336-722024511b29)
 
 
-this just a fun project also my first desktop application that i build i wanted learn how to build a desktop application
+this just a fun project also my first desktop application that i built. I wanted to learn how to build a desktop application using electron js.
