@@ -258,7 +258,7 @@ This project is licensed under the ISC License - see the LICENSE file for detail
 
 ## 🙏 Acknowledgements
 
-- Inspired by the CASIO fx-100MS calculator
+- Inspired by the CASIO fx100MS calculator
 - Built with [Electron](https://www.electronjs.org/)
 - Icons and styling inspired by classic calculator design
 
